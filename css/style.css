@@ -6,6 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+    font-weight: bold;
     color: #ffebcd;
 }
 
@@ -14,10 +15,21 @@ p, ul, ol{
 }
 
 a {
-    color: #CC444B;
+    text-decoration: none;
+    color: #2274A5;
+}
+
+a:hover {
+    color: #42BFDD;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+section {
+    border-bottom: 3px solid #ffebcd;
+    border-top: 3px solid #ffebcd;
+    background: #4D4D4D;
 }
