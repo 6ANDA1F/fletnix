@@ -81,3 +81,34 @@ a {
     color: rgba(255, 255, 255, 0.726);
     text-align: center;
 }
+
+/*Film overzicht*/
+
+.content {
+    margin: 0 4rem;
+    background: black;
+    padding: 2rem;
+}
+
+h2  {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+    margin: 20px auto;
+}
+
+h3 {
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.container > .item img {
+    width: 100%;
+    height: auto;
+}
