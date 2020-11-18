@@ -1,3 +1,41 @@
+.layout-container {
+    display: grid;
+    grid-template-columns: 4rem 1fr 4rem;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+    ". nav ."
+    "header header header"
+    ". main ."
+    ". footer .";
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding: 10rem;
+}
+
+main {
+    grid-area: main;
+    background: black;
+}
+
+aside {
+    /*grid-area: sidebar;*/
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+}
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
@@ -10,11 +48,8 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size: 3.125rem;
     color: #FFFFFF;
     text-shadow: 2px 2px #000000;
-    margin: 200px auto;
 }
 
 ul, li {
@@ -45,22 +80,16 @@ a {
 }
 
 .menu {
-    overflow: hidden;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .menu a {
-    float: right;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    top: 0;
-    border-radius: 5px;
 }
 
 .menu a:hover {
@@ -76,9 +105,6 @@ a {
 }
 
 .copyright {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     background-color: rgba(255, 66, 66, 0.11);
     color: rgba(255, 255, 255, 0.726);
@@ -95,8 +121,8 @@ a {
 
 h2 {
     text-align: center;
-    font-size: 2rem;
     color: #FFFFFF;
+    padding: 5rem;
     text-shadow: 2px 2px #000000;
     margin: 20px auto;
 }
@@ -118,25 +144,31 @@ h3 {
 
 /*Abonnement*/
 
-.section {
+.horizontal-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.section > .item img {
+.horizontal-cards > .item img {
     width: 100%;
     height: auto;
 }
 
-.section > .item {
+.horizontal-cards > .item {
     text-align: center;
 }
 
-.section > .item .button {
+.horizontal-cards > .item .button {
     width: 100%;
     margin: 2rem 0 0;
     padding: 0;
     border: none;
+}
+
+form  input {
+    display: block;
+    width: 20rem;
+    margin: 1rem auto;
 }
 
