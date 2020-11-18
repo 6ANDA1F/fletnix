@@ -1,3 +1,5 @@
+/*Global vars*/
+
 .layout-container {
     display: grid;
     grid-template-columns: 4rem 1fr 4rem;
@@ -52,32 +54,36 @@ h1 {
     text-shadow: 2px 2px #000000;
 }
 
-ul, li {
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5rem;
+    text-shadow: 2px 2px #000000;
+    margin: 20px auto;
+}
+
+h3 {
     color: white;
 }
 
-.button {
-    background-color: #ff0000;
-    border: 2px solid black;
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    text-decoration: none;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    cursor: pointer;
-    display: block;
-    width: 10%;
-    border-radius: 7px;
+ul, li {
+    color: white;
 }
 
 a {
     text-decoration: none;
 }
 
-.button:hover {
-    background-color: rgb(252, 104, 104);
+form  input {
+    display: block;
+    width: 20rem;
+    margin: 1rem auto;
 }
+
+/*--*/
+
+/*Menu*/
 
 .menu {
     display: flex;
@@ -103,6 +109,32 @@ a {
     color: white;
     border-radius: 5px;
 }
+/*--*/
+
+/*Home*/
+
+.button {
+    background-color: #ff0000;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width: 10%;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: rgb(252, 104, 104);
+}
+
+/*--*/
+
+/*Footer*/
 
 .copyright {
     width: 100%;
@@ -110,6 +142,8 @@ a {
     color: rgba(255, 255, 255, 0.726);
     text-align: center;
 }
+
+/*--*/
 
 /*Film overzicht*/
 
@@ -119,17 +153,6 @@ a {
     padding: 2rem;
 }
 
-h2 {
-    text-align: center;
-    color: #FFFFFF;
-    padding: 5rem;
-    text-shadow: 2px 2px #000000;
-    margin: 20px auto;
-}
-
-h3 {
-    color: white;
-}
 
 .container {
     display: grid;
@@ -164,11 +187,5 @@ h3 {
     margin: 2rem 0 0;
     padding: 0;
     border: none;
-}
-
-form  input {
-    display: block;
-    width: 20rem;
-    margin: 1rem auto;
 }
 
