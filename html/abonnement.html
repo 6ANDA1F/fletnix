@@ -30,32 +30,85 @@
             <div class="item">
                 <h3>Subscription 1</h3>
                 <img src="../img/dollar_sign.png" alt="Dollar">
-                <a class="button" href="#">More</a>
+                <a class="button" href="#subscription1">More</a>
             </div>
             <div class="item">
                 <h3>Subscription 1</h3>
                 <img src="../img/dollar_sign.png" alt="Dollar">
-                <a class="button" href="#">More</a>
+                <a class="button" href="#subscription2">More</a>
             </div>
             <div class="item">
                 <h3>Subscription 1</h3>
                 <img src="../img/dollar_sign.png" alt="Dollar">
-                <a class="button" href="#">More</a>
+                <a class="button" href="#subscription3">More</a>
             </div>
         </div>
 
+        <div id="subscription1" class="media-and-text media-reversed">
+            <img src="../img/Baby_Yoda.jpg" alt="Bayb Yoda">
+            <div class="text">
+                <h3>Subscription 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi aspernatur
+                    ducimus eius eos excepturi harum iste itaque iusto maxime, nemo nobis odit perspiciatis porro
+                    quibusdam vero voluptates?</p>
+            </div>
+        </div>
+
+        <div id="subscription2" class="media-and-text">
+            <img src="../img/Baby_Yoda.jpg" alt="Bayb Yoda">
+            <div class="text">
+                <h3>Subscription 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi aspernatur
+                    ducimus eius eos excepturi harum iste itaque iusto maxime, nemo nobis odit perspiciatis porro
+                    quibusdam vero voluptates?</p>
+            </div>
+        </div>
+
+        <div id="subscription3" class="media-and-text media-reversed">
+            <img src="../img/Baby_Yoda.jpg" alt="Bayb Yoda">
+            <div class="text">
+                <h3>Subscription 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid animi aspernatur
+                    ducimus eius eos excepturi harum iste itaque iusto maxime, nemo nobis odit perspiciatis porro
+                    quibusdam vero voluptates?</p>
+            </div>
+        </div>
+
+
         <h2>Join the party!</h2>
 
-        <form action="#" class="form-block">
+        <form action="#" type="POST" class="form-block">
+            <label for="subscription"></label>
+            <select name="subscription" id="subscription" required>
+                <option value="1">Subscription 1</option>
+                <option value="2">Subscription 2</option>
+                <option value="3">Subscription 3</option>
+            </select>
             <label>
-                <input type="text" name="test">
+                <input type="text" name="first_name" placeholder="Name" required>
             </label>
             <label>
-                <input type="text" name="test">
+                <input type="text" name="sur_name" placeholder="Surname" required>
             </label>
             <label>
-                <input type="text" name="test">
+                <input type="text" name="country" placeholder="Country" required>
             </label>
+            <label>
+                <input type="date" name="birthdate" required>
+            </label>
+            <label>
+                <input type="text" name="banknumber" placeholder="Bank IBAN" required>
+            </label>
+            <label>
+                <input type="text" name="username" placeholder="Username" required>
+            </label>
+            <label>
+                <input type="password" name="password" placeholder="Password" required>
+            </label>
+            <label>
+                <input type="password" name="password_confirm" placeholder="Confirm Password" required>
+            </label>
+            <input type="submit" class="button" value="Join">
         </form>
 
     </main>
