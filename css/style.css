@@ -28,13 +28,13 @@ header {
 main {
     grid-area: main;
     background: black;
-    padding: 3rem 0;
+    padding: 3rem 3rem;
 }
 
-aside {
-    /*grid-area: sidebar;*/
-    color: white;
-}
+/*aside {*/
+/*    !*grid-area: sidebar;*!*/
+/*    color: white;*/
+/*}*/
 
 footer {
     grid-area: footer;
@@ -65,7 +65,7 @@ h2 {
     margin: 20px auto;
 }
 
-h3 {
+h3, h4 {
     color: white;
 }
 
@@ -150,16 +150,10 @@ a {
 
 /*Film overzicht*/
 
-.content {
-    margin: 0 4rem;
-    background: black;
-    padding: 2rem;
-}
-
 
 .tile-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
 }
 
@@ -233,3 +227,74 @@ a {
     color: white;
 }
 
+/* Movie detail */
+.main-film-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-film-info > img {
+    width: 15rem;
+    height: auto;
+}
+
+.main-film-info .description {
+    padding: 0 3rem;
+}
+
+.main-film-info .description .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-film-info .description .title .icons span {
+    color: white;
+    margin-right: 1rem;
+}
+
+.main-film-info .description .title .icons span:last-child {
+    margin-right: 0;
+}
+
+.main-film-info .description .title .icons span:before {
+    margin: auto 0;
+}
+
+.main-film-info .description .title h1 {
+    font-size: 3rem;
+}
+
+.main-film-info .description .title h2, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.film-detail-info h2 {
+    padding: 0;
+    text-align: start;
+}
+
+.horizontal-fixed-size-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.horizontal-fixed-size-cards .item {
+
+}
+
+.horizontal-fixed-size-cards .item img {
+    width: 100%;
+    height: auto;
+}
+.tile-small {
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 10rem));
+}
+
+.film-detail-info iframe {
+    width: 100%;
+}
