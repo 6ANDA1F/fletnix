@@ -77,6 +77,14 @@ a {
     text-decoration: none;
 }
 
+a > span {
+    margin-right: .5rem;
+}
+
+label {
+    color: white;
+}
+
 /*--*/
 
 /*Menu*/
@@ -150,7 +158,6 @@ a {
 
 /*Film overzicht*/
 
-
 .tile-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -162,11 +169,25 @@ a {
     height: auto;
 }
 
+.tile-grid p {
+    text-align: center;
+}
+
 .form-block input, .form-block select {
     display: block;
     width: 20rem;
     margin: 1rem auto;
 }
+
+.filter-form {
+    margin-bottom: 3rem;
+}
+
+.filter-form input, .filter-form select:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/*--*/
 
 /*Abonnement*/
 
@@ -266,7 +287,7 @@ a {
     font-size: 3rem;
 }
 
-.main-film-info .description .title h2, h1 {
+.main-film-info .description .title h2, .main-film-info .description .title h1 {
     margin: 0;
     padding: 0;
 }
@@ -283,10 +304,6 @@ a {
     justify-content: space-between;
 }
 
-.horizontal-fixed-size-cards .item {
-
-}
-
 .horizontal-fixed-size-cards .item img {
     width: 100%;
     height: auto;
@@ -297,4 +314,81 @@ a {
 
 .film-detail-info iframe {
     width: 100%;
+}
+/*--*/
+
+/* Over ons */
+
+.overons{
+    display: flex;
+    flex-direction: row;
+}
+
+.overons .description{
+    padding: 0 3rem;
+}
+
+.overons .description .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overons .description .title h1{
+    font-size: 2.5rem;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.overons .teampic {
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 1rem;
+    border: 0.15rem solid #ff0000;
+}
+
+.main-info-team h2{
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.main-info-team p{
+    text-align: center;
+}
+
+.main-info-team h3{
+    text-align: center;
+}
+
+.tile-medium {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+/* Profiel */
+
+.profiel-info h2{
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.profiel-info .email-logo{
+    display: block;
+    width: 5rem;
+    margin: 1rem auto;
+}
+
+.profiel-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+}
+
+.profiel-info h3{
+    text-align: center;
 }

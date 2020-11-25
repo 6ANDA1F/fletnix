@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4753c6a87.js" crossorigin="anonymous"></script>
     <title>Film Overzicht</title>
 </head>
 <body>
@@ -13,10 +14,10 @@
     <nav>
         <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
         <div class="menu">
-            <a href="">Over ons</a>
+            <a href="./over-ons.html">Over ons</a>
             <a href="">Filmoverzicht</a>
             <a href="./abonnement.html">Abonnement</a>
-            <a href="">Account</a>
+            <a href="./profiel.html"><span class="fas fa-user-circle"></span>Account</a>
             <a href="../index.html">Home</a>
         </div>
     </nav>
@@ -27,17 +28,27 @@
 
     <main>
 
-            <form action="#">
-                <!--TODO: Add genre,Regisseur, year and add a submit button  -->
-                <label for="zoeken"></label>
-                <input type="search" id="zoeken" name="zoeken" placeholder="Zoek een film">
+            <form class="filter-form" action="#">
+                <label for="zoeken">Zoek: </label>
+                <input type="search" id="zoeken" name="zoeken" placeholder="Film, Regisseur">
 
-                <label for="filter"></label>
+                <label for="year">Zoek: </label>
+                <input name="year" type="number" id="year" placeholder="Jaartal" min="1940" max="2020">
+
+                <label for="filter">Filter op: </label>
                 <select name="filter" id="filter">
                     <option value="Naam">Naam</option>
                     <option value="Naam">Jaar</option>
                     <option value="Naam">Datum</option>
                     <option value="Naam">Populariteit</option>
+                </select>
+
+                <label for="genre">Filter op: </label>
+                <select name="genre" id="genre">
+                    <option value="Naam">Horror</option>
+                    <option value="Naam">Comedy</option>
+                    <option value="Naam">Actie</option>
+                    <option value="Naam">Romantiek</option>
                 </select>
             </form>
 
