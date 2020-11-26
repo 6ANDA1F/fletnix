@@ -315,6 +315,19 @@ label {
 .film-detail-info iframe {
     width: 100%;
 }
+
+.main-film-info .description .title .button {
+    margin: 0;
+}
+
+.main-film-info .description .title .flex-sub-group {
+    display: flex;
+}
+
+.main-film-info .description .title .flex-sub-group .button {
+    margin-left: 1rem;
+}
+
 /*--*/
 
 /* Over ons */
