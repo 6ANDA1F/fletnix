@@ -207,8 +207,9 @@ label {
 }
 
 .horizontal-cards > .item img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    border-radius: 1rem;
 }
 
 .horizontal-cards > .item {
@@ -216,8 +217,8 @@ label {
 }
 
 .horizontal-cards > .item .button {
-    width: 100%;
-    margin: 2rem 0 0;
+    width: 60%;
+    margin: 2rem auto 0 auto;
     padding: 0;
     border: none;
     display: block;
@@ -228,7 +229,6 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
  /*Only for .media-and-text*/
@@ -293,7 +293,7 @@ label {
 }
 
 .main-film-info .description .title h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .main-film-info .description .title h2, .main-film-info .description .title h1 {
@@ -415,3 +415,20 @@ label {
 .profiel-info h3{
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    nav{
+        justify-items: left;
+    }
+    nav .menu {
+      display: block;
+      flex-direction: column;
+    }
+    nav .menu a{
+      display: block;
+      padding: 1rem;
+    }
+    .logo{
+        width:100%;
+    }
+  }
